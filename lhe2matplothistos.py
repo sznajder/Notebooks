@@ -1,5 +1,7 @@
 import sys
 from math import sqrt
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -146,14 +148,14 @@ def analysis(events):
 
 # Plot and saves hitos 
 
-   plt.hist(mass,bins=50,range=[20.,100.],density=1)
+   plt.hist(mass,bins=50,range=[20.,100.])
    plt.title('Dilepton Mass', fontsize=20)
    plt.xlabel(r'$mass [GeV]$', fontsize=20)
    plt.ylabel('events', fontsize=20)
    plt.savefig('dilepton_mass.png',format='png')
    plt.close()
 
-   plt.hist(ptl,bins=50,range=[20.,100.],density=1)
+   plt.hist(ptl,bins=50,range=[20.,100.])
    plt.title('Lepton Pt', fontsize=20)
    plt.xlabel(r'$Pt [GeV]$', fontsize=20)
    plt.ylabel('events', fontsize=20)
