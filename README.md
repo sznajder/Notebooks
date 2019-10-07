@@ -1,1 +1,1 @@
-# Bari_Lectures
+# Jupyter Notebooks for Machine Learning
